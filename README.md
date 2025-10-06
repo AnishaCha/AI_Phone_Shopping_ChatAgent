@@ -23,31 +23,43 @@ All requirements provided in requirements.txt
 Steps for setup :
 
 git clone https://github.com/AnishaCha/AI_Phone_Shopping_ChatAgent.git
+
 cd AI_Phone_Shopping_ChatAgent
+
 pip install -r requirements.txt
+
 streamlit run AI_AGENT.py
 
 Or Run locally as follows after downloading the code: 
 
 1. Download Ollama.
+
 	ollama run llama3.1:8b
 
 2. Create python environment
+
 	python3 -m venv chatbot
+
 	source chatbot/bin/activate
 
 3. Install packages
+
 	pip install streamlit langchain langchain-community pydantic pandas python-dotenv
 
 4. Run code locally
+
 	streamlit run AI_AGENT.py
 
 ##TECH STACK AND ARCHITECTURE
 
 Frontend	Streamlit
+
 AI Model	llama3.1:8b (via Ollama, optional)
+
 Framework	LangChain (for ChatOllama and prompt templating)
+
 Data Source	Local JSON (phones.json) acts as database
+
 Language	Python 3.9.6
 
 Query-> StreamlitUI -> LLAMA via OLLAMA (Generates natural expression) -> Fallback Heuristics (if llama not available) -> Results 
