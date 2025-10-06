@@ -13,22 +13,22 @@ Link : https://aiphoneshoppingchatagent-fyckxr99ctjgdau2r8pedz.streamlit.app/
 
 Requirements:
 
-Ollama: for locally running any model.
-Python 3.9+
-Streamlit
-LangChain Community
+-Ollama: for locally running any model.
+-Python 3.9+
+-Streamlit
+-LangChain Community
 
 All requirements provided in requirements.txt
 
 Steps for setup :
 
-git clone https://github.com/AnishaCha/AI_Phone_Shopping_ChatAgent.git
+- git clone https://github.com/AnishaCha/AI_Phone_Shopping_ChatAgent.git
 
-cd AI_Phone_Shopping_ChatAgent
+- cd AI_Phone_Shopping_ChatAgent
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
-streamlit run AI_AGENT.py
+- streamlit run AI_AGENT.py
 
 Or Run locally as follows after downloading the code: 
 
@@ -52,15 +52,15 @@ Or Run locally as follows after downloading the code:
 
 ##TECH STACK AND ARCHITECTURE
 
-Frontend  :  	Streamlit
+* Frontend  :  	Streamlit
 
-AI Model  :  	llama3.1:8b (via Ollama, optional)
+* AI Model  :  	llama3.1:8b (via Ollama, optional)
 
-Framework  :  	LangChain (for ChatOllama and prompt templating)
+* Framework  :  	LangChain (for ChatOllama and prompt templating)
 
-Data Source  :  	Local JSON (phones.json) acts as database
+* Data Source  :  	Local JSON (phones.json) acts as database
 
-Language  :  	Python 3.9.6
+* Language  :  	Python 3.9.6
 
 Query-> StreamlitUI -> LLAMA via OLLAMA (Generates natural expression) -> Fallback Heuristics (if llama not available) -> Results 
 
