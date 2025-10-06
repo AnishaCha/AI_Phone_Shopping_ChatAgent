@@ -52,15 +52,15 @@ Or Run locally as follows after downloading the code:
 
 ##TECH STACK AND ARCHITECTURE
 
-Frontend	Streamlit
+Frontend  :  	Streamlit
 
-AI Model	llama3.1:8b (via Ollama, optional)
+AI Model  :  	llama3.1:8b (via Ollama, optional)
 
-Framework	LangChain (for ChatOllama and prompt templating)
+Framework  :  	LangChain (for ChatOllama and prompt templating)
 
-Data Source	Local JSON (phones.json) acts as database
+Data Source  :  	Local JSON (phones.json) acts as database
 
-Language	Python 3.9.6
+Language  :  	Python 3.9.6
 
 Query-> StreamlitUI -> LLAMA via OLLAMA (Generates natural expression) -> Fallback Heuristics (if llama not available) -> Results 
 
