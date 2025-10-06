@@ -2,10 +2,12 @@ This project implements an AI Shopping Chat Agent that helps users discover, com
 
 ##LIVE DEMO :
 
-IMP: Ollama runs locally so it cant be deployed on streamlitcloud.
-Streamlit Cloud deployment falls on fallback mechanism. 
+IMP: Ollama runs locally so it needs to be installed on local machine.
+If LLama not available then results provided by fallback mechanism. 
 
-Link : 
+Deployed on streamlit cloud.
+
+Link : https://aiphoneshoppingchatagent-fyckxr99ctjgdau2r8pedz.streamlit.app/
 
 ##SETUP INSTRUCTION
 
@@ -23,7 +25,7 @@ Steps for setup :
 git clone https://github.com/AnishaCha/AI_Phone_Shopping_ChatAgent.git
 cd AI_Phone_Shopping_ChatAgent
 pip install -r requirements.txt
-streamlit run chat_llama6.py
+streamlit run AI_AGENT.py
 
 Or Run locally as follows after downloading the code: 
 
@@ -49,6 +51,9 @@ Data Source	Local JSON (phones.json) acts as database
 Language	Python 3.9.6
 
 Query-> StreamlitUI -> LLAMA via OLLAMA (Generates natural expression) -> Fallback Heuristics (if llama not available) -> Results 
+
+ChatOllama provides a simple interface for calling Llama models locally, instead of manually managing API calls.
+ChatPromptTemplate helps you structure messages (system + user roles).
 
 ###PROMPT DESIGN AND SAFETY STRATEGY
 
